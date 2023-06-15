@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+<div class="table-container">
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Content</th>
+                <!-- Add more table headers as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr class="active-row">
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>
+                    <form method="post" action="/">
+                        <input type="hidden" name="remove" value={{ row[0] }}>
+                        <button type="submit" class="_button">Remove</button>
+                    </form>
+                </td>
+                <!-- Add more table cells as needed -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<form method="post" class="get_input form-container">
+    <div class="form-label">
+        <label for="title">Title</label>
+    </div>
+    <div class="input-container">
+        <input name="title" class="input" required/>
+    </div>
+    <br/>
+    <div class="form-label">
+        <label for="content">Content</label>
+    </div>
+    <div class="input-container">
+        <input name="content" class="input" required/>
+    </div>
+    <div class="button-container">
+        <button type="submit" class="button-submit">Add Task</button>
+    </div>
+</form>
+
+
+
+{% endblock %}

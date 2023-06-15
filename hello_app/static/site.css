@@ -1,0 +1,144 @@
+.message {
+    font-weight: 600;
+    color: blue;
+}
+
+.navbar {
+    background-color: lightslategray;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 8px 5px 8px 5px;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.body-content {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.styled-table {
+    width: 40%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    table-layout: fixed;
+}
+
+.styled-table thead tr {
+    background-color: #778899;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 200px; /* Adjust the max-width value as needed */
+    
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+._button{
+    background-color: #778899;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+._button:hover {
+    background-color: #4a555f;
+}
+
+.get_input {
+    background-color: #778899;
+    color: #ffffff;
+    border: none;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.button-submit {
+    background-color: #ffffff;
+    color: #778899;
+    border: none;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.button-submit:hover {
+    background-color: #ebebeb;
+    color: #778899;
+}
+
+.get_input .input {
+    width: 150px; /* Adjust the width value as per your requirement */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
